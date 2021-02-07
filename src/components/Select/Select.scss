@@ -1,0 +1,56 @@
+.Select {
+  padding: 17px 24px;
+  background: var(--background-white);
+  border-radius: 8px;
+  width: 260px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: bold;
+  position: relative;
+  &:first-child {
+    margin-right: 40px;
+  }
+
+  &__selectedOption {
+    position: relative;
+    &::after {
+      display: block;
+      height: 8px;
+      width: 12px;
+      position: absolute;
+      right: 24px;
+      top: 8px;
+      content: "";
+      background: url("../../assets/icons/arrow.svg");
+    }
+  }
+
+  &__label {
+    color: var(--cta);
+  }
+
+  &__value {
+    color: var(--text-dark);
+    margin-left: 4px;
+  }
+
+  &__options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--background-white);
+    padding: 0;
+    margin: 0;
+  }
+
+  &__option {
+    list-style-type: none;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 8px;
+    &:hover {
+      background: var(--cta);
+    }
+  }
+}

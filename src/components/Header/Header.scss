@@ -1,0 +1,23 @@
+.Header {
+  background: white;
+  height: 120px;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &__logo {
+    position: absolute;
+    height: 56px;
+    width: 190px;
+    left: 120px;
+    bottom: 32px;
+  }
+
+  &__link {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    width: 560px;
+    height: 56px;
+  }
+}

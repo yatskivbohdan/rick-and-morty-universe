@@ -1,0 +1,17 @@
+.TextField {
+  &__label {
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    color: var(--text-light);
+    opacity: 0.5;
+  }
+
+  &__text {
+    margin: 0px 0px 16px 0px;
+    font-size: 15px;
+    line-height: 18px;
+    color: white;
+  }
+}

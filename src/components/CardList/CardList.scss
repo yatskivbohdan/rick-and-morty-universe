@@ -1,0 +1,10 @@
+.CardList {
+  background: var(--text-dark);
+  max-width: 1700px;
+  &__users {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+  }
+}

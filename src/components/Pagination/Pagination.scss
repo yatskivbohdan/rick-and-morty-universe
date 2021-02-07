@@ -1,0 +1,33 @@
+.Pagination {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
+  &__page {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    background: var(--background-light);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-light);
+    margin-right: 8px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+    &_active {
+      background: var(--text-light);
+      color: var(--text-dark);
+    }
+  }
+  &__arrow {
+    opacity: 0.3;
+    &_prev {
+      transform: rotateY(180deg);
+    }
+    &_active {
+      opacity: 1;
+    }
+  }
+}

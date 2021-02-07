@@ -1,0 +1,38 @@
+.Card {
+  width: 282px;
+  height: 540px;
+  display: inline-block;
+  border-radius: 12px;
+  background: var(--background-light);
+  text-align: left;
+  color: white;
+  margin: 40px 12px;
+
+  &__image {
+    height: 282px;
+    width: 282px;
+    border-radius: 12px 12px 0 0;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 16px;
+  }
+
+  &__name {
+    display: block;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  &__tags {
+    margin: 8px 0 24px 0;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: white;
+  }
+}
