@@ -8,6 +8,8 @@ import { ReactComponent as Logo } from "../../assets/icons/logo.svg";
 import { ReactComponent as ToTheTop } from "../../assets/icons/toTheTop.svg";
 import { statusOptions, genderOptions } from "../../utils";
 
+// TODO: import order. This can be fixed with linting rule
+
 function Home() {
   const [name, setName] = useState("");
   const [inputName, setInputName] = useState("");
