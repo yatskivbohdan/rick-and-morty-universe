@@ -29,6 +29,10 @@ const DetailedCharacter = () => {
     setEpisodes(episodes);
   };
 
+  // TODO: hmm.. interesting, Roman has used exactly the same approach
+  // Fist thing: "Loading..." can be kept as const
+  // Second thing: try to think of better ways. What will you do if you have 100 fields?
+  // Third thing: maybe one loader , in case character is still loading , would be enough
   const { name, status, gender, species, origin, created, image, location } = character || {
     name: "Loading...",
     status: "Loading...",
@@ -83,6 +87,7 @@ const DetailedCharacter = () => {
               <TextField label="Origin:" text={origin.name} />
               <TextField
                 label="Birthday:"
+                // TODO: better move it upper into some const
                 text={DateTime.fromISO(created).setLocale("en-GB").toLocaleString(DateTime.DATE_MED)}
               />
               <TextField label="Last known location:" text={location.name} />

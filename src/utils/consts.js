@@ -23,6 +23,6 @@ const genderOptions = [
   { value: "unknown", label: "Unknown" },
   { value: "Genderless", label: "Genderless" },
 ];
-
+// TODO: move this to .env, don't forget to create .env.example
 export const SERVER_URL = "https://rickandmortyapi.com/api";
 export { statusEmojis, genderEmojis, statusOptions, genderOptions };

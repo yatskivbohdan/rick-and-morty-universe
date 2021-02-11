@@ -5,6 +5,8 @@ import { useState, useEffect, useLayoutEffect } from "react";
 import TextField from "../../components/TextField";
 import { getAllCharacters, getEpisode } from "../../api";
 
+// TODO: import order ? 
+
 const DetailedEpisode = () => {
   const { id } = useParams();
   const [currentEpisode, setCurrentEpisode] = useState();
@@ -20,6 +22,7 @@ const DetailedEpisode = () => {
   });
 
   const loadEpisode = async (id) => {
+    // TODO: you can use const here, your variables do not change
     let [episode, characters] = await Promise.all([getEpisode(id), getAllCharacters()]);
     setCurrentEpisode(episode);
     setCharacterList(episode.characters);
