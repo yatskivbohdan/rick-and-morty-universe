@@ -15,6 +15,8 @@ This is a pet project aimed to learn ReactJS. The project implies a web-applicat
 
 6. Show the most popular Rick & Morty phrases instead of the search bar in Detailed Character / Episode pages. A new phrase should show up every 30s.
 
+7. Is your pre-commit hook really working? I tried to commit some console.logs, and it did not show any error / warning message to me. Maybe that's because your eslint configs equal to 1. Please, show errors for most of your configured rules.
+
 
 
 ## Run
