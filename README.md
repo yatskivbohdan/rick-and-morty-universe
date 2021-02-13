@@ -2,8 +2,15 @@
 
 This is a pet project aimed to learn ReactJS. The project implies a web-application that allows you to get info about "Rick and Morty" series characters and episodes.
 
-## Run
+## Project conventions
+Project uses https://rickandmortyapi.com/
 
-In the project directory, you can run:
+Naming convention is lowerCamelCase.
+
+## Run
+To run the project you must install modules:
+
+### `yarn add package`
+Then in the project directory, you can run:
 
 ### `yarn start`
