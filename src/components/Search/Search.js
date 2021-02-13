@@ -2,21 +2,14 @@ import "./Search.scss";
 import { PropTypes } from "prop-types";
 import { ReactComponent as SearchIcon } from "../../assets/icons/search-icon.svg";
 
-const Search = ({ className, value, setValue, searchValue }) => {
-  const hanleChange = ({ target: { value } }) => {
-    if (value === "") searchValue(value);
+const Search = ({ className, value, setValue }) => {
+  const handleChange = ({ target: { value } }) => {
     setValue(value);
-  };
-  const handleClick = () => {
-    searchValue(value);
   };
   return (
     <div className={`Search__${className}`}>
       <SearchIcon className="Search__icon" />
-      <input className="Search__input" placeholder="search by name" value={value} onChange={hanleChange} />
-      <button className="Search__button" onClick={handleClick}>
-        Find Character
-      </button>
+      <input className="Search__input" placeholder="search by name" value={value} onChange={handleChange} />
     </div>
   );
 };

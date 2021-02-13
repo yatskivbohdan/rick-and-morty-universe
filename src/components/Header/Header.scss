@@ -1,5 +1,5 @@
 .Header {
-  background: white;
+  background: var(--header-background);
   height: 120px;
   position: relative;
   display: flex;
@@ -19,5 +19,13 @@
     margin: auto;
     width: 560px;
     height: 56px;
+  }
+
+  &__quote {
+    position: absolute;
+    right: 32px;
+    font-weight: bold;
+    font-style: italic;
+    max-width: 500px;
   }
 }

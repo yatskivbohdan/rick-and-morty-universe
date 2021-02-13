@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Header from "./components/Header";
 import DetailedCharacter from "./pages/DetailedCharacter";
 import DetailedEpisode from "./pages/DetailedEpisode";
+import NotFound from "./pages/NotFound";
 
 const Router = () => {
   return (
@@ -16,11 +17,15 @@ const Router = () => {
           <Header />
           <DetailedEpisode />
         </Route>
+        <Route exact path="/error">
+          <Header />
+          <NotFound />
+        </Route>
         <Route exact path="/">
           <Home />
         </Route>
         <Route exact path="*">
-          <Redirect to="/" />
+          <Redirect to="/error" />
         </Route>
       </Switch>
     </BrowserRouter>

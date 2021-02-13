@@ -1,1 +1,1 @@
-export { SERVER_URL, statusEmojis, genderEmojis, statusOptions, genderOptions } from "./consts.js";
+export { quotes, statusEmojis, genderEmojis, statusOptions, genderOptions } from "./consts.js";

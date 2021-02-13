@@ -1,0 +1,12 @@
+.Loader {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+  background: var(--text-dark);
+  color: var(--text-light);
+  font-weight: bold;
+  &__text {
+    font-size: 30px;
+    margin: auto;
+  }
+}

@@ -17,11 +17,11 @@
 
   "rules": {
     "react/react-in-jsx-scope": "off",
-    "no-console": 1,
-    "import/order": 1,
-    "import/no-unresolved": 1,
-    "react/prop-types": 1,
-    "react/default-props-match-prop-types": 1
+    "no-console": 2,
+    "import/order": 2,
+    "import/no-unresolved": 2,
+    "react/prop-types": 2,
+    "react/default-props-match-prop-types": 2
   },
   "env": {
     "es6": true,
