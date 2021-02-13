@@ -10,7 +10,7 @@ Naming convention is lowerCamelCase.
 ## Run
 To run the project you must install modules:
 
-### `yarn add package`
+### `yarn install`
 Then in the project directory, you can run:
 
 ### `yarn start`
